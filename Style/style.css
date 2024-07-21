@@ -1,0 +1,752 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x:hidden;
+}
+body{
+    
+
+   
+    background: rgb(31,31,31);
+    background: -moz-radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
+    background: -webkit-radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
+    background: radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#5c817a",GradientType=1);
+
+    
+    overflow-x:hidden;
+}
+/** header */
+.mobile-nav-icon{
+    display: none; }
+
+.header{
+    
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    padding-top: 39px;
+
+    height: 59px;
+}
+
+/* *navbar */
+.navbar-list{
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+.navbar {
+    
+    position: relative;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    padding: 10px 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: #06FAEC;
+    
+}
+
+.highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #06FAEC;
+    transition: all 0.25s ease-out;
+}
+
+
+
+.mobile-nav-icon[name='close-outline']{
+    color: white;
+    display: none;
+}
+
+
+
+
+
+/** logo */
+.header .logo{
+    color: white;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
+}
+
+.header .logo samp{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aqua;
+    height: 3rem;
+    text-shadow: 1px 5px  19px  #06FAEC;
+    
+}
+
+.mobile-nav-icon{
+width: 40px;
+height: 40px;
+}
+
+
+
+
+/* *hero section */
+.section-hero{
+    
+    height: 100vh   ;
+    width: 100%;
+    /* border: solid red; */
+    display:flex;
+    justify-content: center;
+    gap: 3%;
+    
+   
+
+}
+.hero img{
+    width: 99%;
+    height: 100%;
+  
+   
+
+
+}
+#heroText{
+    color: white;
+    margin-top: 29vh;
+    font-size: 27px;
+    text-align: center;
+
+
+    
+}   
+#heroText h1 span{
+    color: #06FAEC;
+}
+#heroText h1{
+    padding-top: 30px;
+    font-style: italic;
+    letter-spacing: 2.4px;
+}
+
+
+/* ?about section */
+.about-section{
+    
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    
+}
+.ima_ab{
+    background-color:#313131;
+    height: 70vh;
+    width: 60vh;
+    padding-top: 60px;
+   border-radius: 39px;
+}
+
+#My_img{
+    text-align: center;
+}
+#My_img img{
+  
+
+    height:100% ;
+}
+
+#about_me{
+    color: white;
+    padding-top: 20px;
+
+}
+
+
+#A_M{
+    font-family: "Concert One", sans-serif;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#me{
+    padding-left: 23px;
+    margin-top: 25px;
+    width: 55vh;
+
+}
+#divboutDownloadCV{
+    display:flex;
+    justify-content: end;
+    margin-right:-7px;
+    margin-top: 50px;
+    
+    
+   
+    
+}
+
+#divboutDownloadCV a{
+    background-color: rgb(8, 8, 8);
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border-radius: 30px;
+}
+
+#divboutDownloadCV a:hover{
+  color: #06FAEC;
+}
+
+/* ? experience and education div*/
+
+.main_container{
+    margin: 15px auto;
+    background: rgba(217, 165, 165, 0);
+    width: 300px;
+    height: 200px;
+    
+    
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+    margin: 30px;
+    
+
+}
+.buttons button{
+    border: none;
+    background: none;
+    width: 50px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  
+
+}
+
+.buttons button:hover{
+    color: #06FAEC;
+
+}
+
+.blocks{
+    display:flex ;
+    width: 100%;
+   
+    height: 100%;
+}
+.blocks .diva h4{
+color: rgb(172, 255, 254);
+}
+
+.blocks .diva p{
+}
+
+.diva{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+.divb{
+    display: none;
+    width: 100%;
+    height: auto;
+
+}
+
+
+
+
+
+button.active,
+button.active:hover {
+   color: #06FAEC;
+  
+  
+}
+
+
+
+
+/* ? my skill section */
+.sub-title {
+    text-align: center;
+    font-size: 47px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    color: white;
+}
+
+.sub-title span {
+    color: #06FAEC;
+}
+
+#skillSection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.container1 {
+    width: 600px;
+    padding: 75px 90px;
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.bar {
+    font-size: 23px;
+}
+
+.Technical-bars .bar {
+    margin: 40px 0;
+}
+
+.Technical-bars .bar:first-child {
+    margin-top: 0;
+}
+
+.Technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+
+.Technical-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.Technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #06FAEC;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transition: scaleX(0);
+    transform-origin:left ;
+}
+
+/* ? my Technical skills*/
+.progress-line.html span{
+    width:87% ;
+}
+.progress-line.css span{
+    width:85% ;
+}
+.progress-line.python span{
+    width:19% ;
+}
+.progress-line.javascript span{
+    width:78% ;
+}
+.progress-line.nodejs span{
+    width:69% ;
+}
+.progress-line.react span{
+    width:20% ;
+}
+.progress-line.mongodb span{
+    width:48% ;
+}
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color:#17c0d3;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -23px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+
+/* ? show skill % */
+.progress-line.html  span::after{
+    content:'87%' ;
+}
+.progress-line.css  span::after{
+    content:'85%' ;
+}
+.progress-line.python  span::after{
+    content:'19%' ;
+}
+.progress-line.javascript  span::after{
+    content:'78%' ;
+}
+.progress-line.nodejs  span::after{
+    content:'69%' ;
+}
+.progress-line.react  span::after{
+    content:'20%' ;
+}
+.progress-line.mongodb  span::after{
+    content:'48%' ;
+}
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: rgb(253, 253, 253);
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/* .container1{
+    background-color: rgb(90, 90, 90);
+
+} */
+
+/* ? My Professional skills */
+
+.radial-bars{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height:140px ;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%) rotate(-90deg) ;
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: rgb(255, 255, 255);
+    fill: transparent;
+    stroke-dasharray:502 ;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+    100%{
+        stroke-dashoffset:-1 ;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #06FAEC;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset:502 ;
+    stroke-linecap: round;
+    
+
+
+}
+.path-1{animation:animate-path1 1s linear forwards;}
+.path-2{animation:animate-path2 1s linear forwards;}
+.path-3{animation:animate-path3 1s linear forwards;}
+.path-4{animation:animate-path4 1s linear forwards;}
+
+
+@keyframes animate-path1{
+    100%{
+        stroke-dashoffset:55;
+    }
+}
+@keyframes animate-path2{
+    100%{
+        stroke-dashoffset:45;
+    }
+}
+@keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
+@keyframes animate-path4{
+    100%{
+        stroke-dashoffset:40;
+    }
+}
+
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5 1s linear forwards;
+    opacity: 0;
+
+}
+.progress-bar .text{
+    width:100% ;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+    animation:showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+
+/* ? project section */
+
+.P_container{
+color: white;
+}
+
+.P_container{
+    padding: 15px 9%;
+    padding-bottom: 100px;
+
+}
+
+.P_container .MyProject{
+    text-align: start;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 40px;
+}
+.P_container .MyProject span{
+    color: #06FAEC;
+   
+} 
+
+
+.P_container .box-container{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    
+}
+
+.P_container .box-container .box{
+    text-align: center;
+    border-radius:5px ;
+    background-color: #31313196;
+    padding-bottom: 25px;
+   
+
+}
+.P_container .box-container .box img{
+    min-height: 300px;
+    width: 100%;
+    
+}
+
+
+.P_container .box-container .box h3{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 10px 0; 
+
+    
+}
+.P_container .box-container .box p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+   line-height: 1.8;
+    
+    
+}
+.P_container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: rgb(14, 103, 145);
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.P_container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+
+
+}
+.P_container .box-container .box:hover{
+    box-shadow: 0 0px 15px #06FAEC;
+    transform: scale(1.02);
+    
+
+}
+
+#git{
+    color: white;
+    width: 10vh;
+   margin-bottom: 30px;
+    
+    transition:0.5s ;
+
+
+}
+
+#git img{
+  background: #ffffff;
+  width: 100%;
+  border-radius: 20px;
+  transition:0.5s ;
+
+  
+  
+}
+#git img:hover{
+    background: #06FAEC
+ 
+  }
+#git:hover{
+    transform: 0.3s;
+  
+}
+
+/* ? Contact Me styling footer */
+
+
+#ContactMeSec{
+color: white;
+margin-top: 30px;
+}
+.ContactMediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    margin-top: 5vh;
+
+}
+#ContactMeSec h1 {
+    text-align: center;
+    font-size: 35px;
+}
+#ContactMeSec h1 span{
+    color: #06FAEC;
+}
+.ContactMediv{
+    margin-bottom: 4vh;
+    /* border: red solid; */
+}
+.ContactMediv .Idiv i{
+font-size: 12vh;
+
+}
+.ContactMediv .Idiv img{
+  
+    background-color: rgb(255, 255, 255);
+width: 8vh;
+    
+}
+
+.ContactMediv a{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+   
+   
+}
+
+.ContactMediv a:hover{
+    color: #06FAEC;
+}
+.ContactMediv .Idiv{
+    text-align: center;
+   
+}
+.ContactMediv .Idiv a{
+    text-align: center;
+}
+.contactme{
+    text-align: center;
+}

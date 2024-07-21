@@ -1,0 +1,256 @@
+
+/* ?responsive codes */
+/* 980px */
+@media(max-width:768px){
+    .mobile-navbar-btn{
+       
+        color: white;
+        display: block;
+        z-index: 999;
+        border: 3px solid rgb(255, 255, 255);
+    
+        }
+    .header{
+        position: relative;
+        padding: 0.4rem;
+        }
+    .header .logo{
+        width: 60%;
+        } 
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        background-color: #3F3F3F; 
+        position: absolute;
+        top: 0;
+        left: 0;    
+     
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    
+        /* ? tranisition  */
+         transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;  
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        padding: 0 1.2rem;
+        padding-top: 10px;
+    }
+
+    .navbar-list {
+        gap: 1.2rem;
+    }
+
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+
+    .header .logo {
+        font-size: 1.8rem;
+    }
+
+   
+    .actiove .navbar{
+        z-index: 10;
+        transform: translateX(0);
+        opacity: 1;
+        visibility:visible ;
+        pointer-events: auto;
+    } 
+    
+    .actiove .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+      
+        display: block;
+    }
+    .mobile-nav-icon{
+        display: block; }
+    .actiove .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+        
+        display: none;
+    }
+    .P_container{
+        padding:20px;
+    }
+/* ? header */
+.section-hero{
+    gap: 0%;
+}
+.hero img {
+    width: 39vh;
+    height: 100%;
+    margin-left: -40px;
+    z-index: -1;
+
+   
+}
+#heroText {
+    z-index: 1;
+    font-size: 19px;
+    margin-left: 29px;
+   
+}
+#heroText h1 {
+    padding-top: 0px;
+   
+}
+
+/* ? about section media */
+
+    .about-section {
+        flex-direction: column;
+        gap: 0px;
+        height: auto;
+        margin-top: 30px;
+        padding: 0;
+    }
+
+    .ima_ab {
+        height: 100%;
+        width: 80%;
+        padding-top: 20px;
+        border-radius:50px ;
+       
+     
+    
+    }
+
+    #My_img img {
+        border-radius: 50px;
+        width: 100%;
+       
+
+        
+       
+    }
+    #A_M {
+        text-align: center;
+    }
+    #me {
+        width: 80%;
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+
+    #divboutDownloadCV {
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 40px;
+    }
+
+    .main_container {
+        width: 100%;
+        height: auto;
+    }
+
+    .buttons {
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .buttons button {
+        width: 100px;
+        height: 35px;
+    }
+
+    .blocks {
+        flex-direction: column;
+    }
+
+
+
+    /* ?skills */
+
+    .heading {
+        text-decoration: none;
+    }
+    .radial-bars {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+    .toinen {
+        width: 600px;
+        padding: 75px 50px;
+    }
+
+/*? footer media */
+
+#ContactMeSec {
+    color: white;
+    margin-top: 30px;
+}
+
+.ContactMediv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+#ContactMeSec h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#ContactMeSec h1 span {
+    color: #06FAEC;
+}
+
+.ContactMediv .Idiv i {
+    font-size: 10vh;
+}
+
+.ContactMediv .Idiv img {
+    background-color: rgb(255, 255, 255);
+    width: 6vh;
+}
+
+.ContactMediv a {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+
+.ContactMediv a:hover {
+    color: #06FAEC;
+}
+
+.ContactMediv .Idiv {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.ContactMediv .Idiv a {
+    text-align: center;
+}
+
+.contactme {
+    text-align: center;
+}
+   
+}
+
+
+
+
+    
+    
+    
+
+
