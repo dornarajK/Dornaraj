@@ -9,16 +9,14 @@ html{
     overflow-x:hidden;
 }
 body{
-    
+    background: rgb(59,62,65);
+    background: -moz-linear-gradient(231deg, rgba(59,62,65,1) 7%, rgba(0,0,0,0.7344187675070029) 37%, rgba(3,49,26,0.6251750700280112) 66%, rgba(3,42,36,1) 100%);
+    background: -webkit-linear-gradient(231deg, rgba(59,62,65,1) 7%, rgba(0,0,0,0.7344187675070029) 37%, rgba(3,49,26,0.6251750700280112) 66%, rgba(3,42,36,1) 100%);
+    background: linear-gradient(231deg, rgba(59,62,65,1) 7%, rgba(0,0,0,0.7344187675070029) 37%, rgba(3,49,26,0.6251750700280112) 66%, rgba(3,42,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3b3e41",endColorstr="#032a24",GradientType=1);
 
-   
-    background: rgb(31,31,31);
-    background: -moz-radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
-    background: -webkit-radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
-    background: radial-gradient(circle, rgba(31,31,31,0.8184523809523809) 48%, rgba(92,129,122,0.8128501400560224) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f1f1f",endColorstr="#5c817a",GradientType=1);
 
-    
+
     overflow-x:hidden;
 }
 /** header */
@@ -79,7 +77,7 @@ body{
     bottom: 0;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 1.5px;
     background-color: #06FAEC;
     transition: all 0.25s ease-out;
 }
@@ -192,9 +190,11 @@ height: 40px;
 
 #My_img{
     text-align: center;
+    
 }
 #My_img img{
     height:100% ;
+    border-radius: 35px;
 }
 
 #about_me{
@@ -230,8 +230,9 @@ height: 40px;
     background-color: rgb(8, 8, 8);
     text-decoration: none;
     color: white;
-    padding: 3px;
+    padding: 2px;
     border-radius: 30px;
+    font-size: 10px;
 }
 
 #divboutDownloadCV a:hover{
@@ -276,15 +277,21 @@ height: 40px;
 .blocks{
     display:flex ;
     width: 100%;
-   
     height: 100%;
 }
+
 .blocks .diva h4{
-color: rgb(172, 255, 254);
+    color: rgb(255, 255, 255);
+    
+    font-size: 15px;
+    
 }
 
-/* .blocks .diva p{
-} */
+.blocks .diva p{
+    font-size: 15px;
+    color: #b0a9a9;
+    
+}
 
 .diva{
     width: 100%;
@@ -590,67 +597,113 @@ button.active:hover {
 
 
 /* ? project section */
-
-.P_container{
-color: white;
-}
-
-.P_container{
-    padding: 15px 9%;
-    padding-bottom: 100px;
-
-}
-
-.P_container .MyProject{
-    text-align: start;
-    padding-bottom: 15px;
-    color: white;
-    font-size: 40px;
-}
-.P_container .MyProject span{
-    color: #06FAEC;
-   
-} 
-
-
-.P_container .box-container{
+/* !------------------------------------------------------------------------------- */
+ /*? timeline */
+ .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
-    gap: 15px;
-    
-}
 
-.P_container .box-container .box{
-    text-align: center;
-    border-radius:5px ;
-    background-color: #31313196;
-    padding-bottom: 25px;
-   
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /*? My Project  Container around content */
+  .container {
+    padding: 10px 50px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /*? The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color:  black;
+    border: 4px solid  #06FAEC;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /*? Place the container  */
+  .left {
+    left: 0;
+  }
 
-}
-.P_container .box-container .box img{
-    min-height: 300px;
+  .right {
+    left: 50%;
+  }
+  
+
+  /*? Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* ?Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* ?The actual content */
+  img{
     width: 100%;
-    
-}
+   }
+   
+  .content {
+    padding: 0px 0px 10px 0px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.5s;
 
+   }
+   .content:hover{
+    transition: 0.5s;
+    box-shadow: 10px 10px 5px rgb(62, 61, 61);
+   }
+  
+ 
 
-.P_container .box-container .box h3{
-    color: rgb(255, 255, 255);
-    font-size: 22px;
-    padding: 10px 0; 
-
-    
-}
-.P_container .box-container .box p{
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-   line-height: 1.8;
-    
-    
-}
-.P_container .box-container .box .btn{
+  .btn{
     margin-top: 10px;
     display: inline-block;
     background: rgb(0, 0, 0);
@@ -659,48 +712,51 @@ color: white;
     border-radius: 5px;
     padding: 8px 25px;
     text-decoration: none;
-}
-
-.P_container .box-container .box .btn:hover{
-    /* letter-spacing: 1px; */
-    color: #06FAEC;
-
+    transition: 0.5s;
 
 }
-.P_container .box-container .box:hover{
-    box-shadow: 0 0px 15px #06FAEC;
-    transform: scale(1.02);
-    
 
+
+.btn:hover{
+  transition: 0.5s;
+  color: #06FAEC;
+  box-shadow: 5px 5px 5px rgb(62, 61, 61);
+
+}
+
+#gitg{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 55px;
 }
 
 #git{
-    color: white;
-    width: 10vh;
-   margin-bottom: 30px;
-    
-    transition:0.5s ;
-
-
+  color: white;
+  width: 10vh;
+  transition:0.5s ;
 }
 
 #git img{
-  background: #ffffff;
-  width: 100%;
-  border-radius: 20px;
-  transition:0.5s ;
+background: #ffffff;
+width: 100%;
+border-radius: 20px;
+transition:0.5s ;
 
-  
-  
+
+
 }
 #git img:hover{
-    background: #06FAEC
- 
-  }
-#git:hover{
-    transform: 0.3s;
-  
+  background: #06FAEC
+
 }
+#git:hover{
+  transform: 0.3s;
+
+}
+
+
+/* !------------------------------------------------------------------------------- */
 
 /* ? Contact Me styling footer */
 
