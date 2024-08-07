@@ -186,6 +186,12 @@
 
 
 /*? project section  */
+#gitg{
+    display:block;
+    margin-bottom: -4px;
+  }
+
+
 
 .timeline::after {
     left: 31px;
