@@ -299,10 +299,35 @@
             </div>
         </section>
 
-<!-- ? Contact Me section -->
-<footer id="ContactMeSec" class="sections">
-<h1 id="liC">Contact <span>Me</span></h1>
 
+ <div id="Div_gapContactHr">
+    <hr id="gapContactHr">
+ </div>
+
+<!-- ? Contact Me section -->
+<section class="contact-container" class="sections">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-tile">
+        <h2 id="liC" class="sub-title">Contact <span>Me</span></h2>
+      
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="1f11b132-fee2-4e57-8378-36a4fa605275">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+        <input type="text" name="subject" class="contact-inputs" placeholder="Subject" value="">
+
+        <textarea name="message" class="contact-inputs" placeholder="Your message" required></textarea>
+
+        <button type="submit">Submit <i class='bx bx-right-arrow-alt'></i></button>
+    </form>
+    <div class="contact-richt">
+        <img src="/images/message.jpeg" alt="">
+    </div>
+</section>
+
+<!-- ? my Contacts -->
+<footer id="ContactMeSec" class="sections">
     <div class="ContactMediv">
         <div>
             <div class="Idiv"><i class='bx bx-phone-call'></i></div>
@@ -318,7 +343,7 @@
             <div class="Idiv"><i class='bx bx-mail-send'></i>
         <div class="contactme">
             <h2>Gmail</h2>
-            <a href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnlTlWHrcqDgBSHDTHwsmtBxcTWLdtWGBjkrcBpthrZmnggsdCWGdcrLmXsbjPXzgjqzr" target=”_blank”>devraj.kharal05@gmail.com</a>
+            <a target=”_blank”>devraj.kharal05@gmail.com</a>
         </div>
         </div>
         </div>
@@ -331,11 +356,12 @@
                     <i class='bx bxs-download'></i>
                     </a>
                 </div>
-        
+
                 </div>
             </div>
         </footer>
     </main>
+
 
 <!--* script section -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

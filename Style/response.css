@@ -215,6 +215,23 @@
   .right {
     left: 0%;
   }
+  /* ?gap hr */
+
+
+  #Div_gapContactHr{
+    display:block;
+
+ }
+
+
+
+/* ? contact  */
+  .contact-inputs{
+    width: 80vw;
+}
+.contact-richt{
+    display: none;
+}
 /*? footer media */
 
 #ContactMeSec {
