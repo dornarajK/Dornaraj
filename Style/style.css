@@ -538,8 +538,8 @@ color: rgb(255, 255, 255);
 
 
 /* ? project section */
-/* !------------------------------------------------------------------------------- */
  /*? timeline */
+
  .timeline {
     position: relative;
     max-width: 1200px;
@@ -624,8 +624,16 @@ color: rgb(255, 255, 255);
   }
   
   /* ?The actual content */
-  img{
+  .content img{
     width: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+   }
+   .content img:hover{
+    transform: scale(1.1);
+    /* border: solid 1px rgb(0, 0, 0); */
+    border-radius: 10px;
+   
    }
    
   .content {
@@ -635,6 +643,7 @@ color: rgb(255, 255, 255);
     border-radius: 6px;
     text-align: center;
     transition: 0.5s;
+  
 
    }
    .content:hover{
